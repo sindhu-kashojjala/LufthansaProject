@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lufthansa Application Test Suite" parallel="methods" thread-count="1" verbose="2">
+	<listeners>
+		<listener class-name="com.lufthansa.base.ExtentReportListener" />
+	</listeners>
+	<parameter name="browserType" value="chrome" />
+	<parameter name="appURL" value="https://google.com"/>
+	
+	<test name="Lufthansa Test">
+		<classes>
+			<class name="com.lufthansa.test.LoginPageTest"></class>
+		</classes>
+	</test>
+</suite>
